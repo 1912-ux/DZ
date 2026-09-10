@@ -3,9 +3,6 @@ name = str(input("Введите имя:"))
 group = str(input("Введите группу:"))
 city = str(input("Введите город:"))
 age = int(input("Сколько полных лет:"))
-if age < 1 or age > 120:
-    print("Введите реальный возраст:",)
-    age = int(input())
 favorite_sub = str(input("Введите любимый предмет:"))
 hour = float(input("Введите количество часов подготовки в неделю:"))
 
