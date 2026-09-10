@@ -13,8 +13,9 @@ item2_qwerty = int(input("Введите количество второй по�
 item2_price = float(input("Введите цену второй позиции: "))
 
 discount = int(input("Введите скидку на весь заказ: "))
-if discount > 100 or discount < 0:
-    discount = int(input("Введите скидку в процентах от 1 до 100: "))
+while discount > 100 or discount < 0:
+    discount = (int(input("Введите скидку в процентах от 1 до 100: ")))
+
 
 
 delivery_cost = float(input("Введите стоимость доставки: "))
