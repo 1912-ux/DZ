@@ -1,12 +1,11 @@
 total_volume = int(input("Сколько у вас есть бутылок светлого нефильтрованного сока? "))
 capacity = int(input("Введите сколько бутылок вашего СОКА, могут поместиться в 1 ящик: "))
 
-full = total_volume / capacity
-ost = total_volume % capacity
+full_buses = total_volume // capacity
+remainder = total_volume % capacity
+buses_needed = (total_volume + capacity - 1) // capacity
 
-min_units = (total_volume + capacity - 1) // capacity
-
-print("\n")
-print(f"Полностью заполненных единиц: {full}")
-print(f"Остаток: {ost}")
-print(f"Минимальное число единиц: {min_units}")
+print()
+print(f"Полностью заполненных автобусов: {full_buses}")
+print(f"Остаток студентов: {remainder}")
+print(f"Минимально нужно автобусов: {buses_needed}")
